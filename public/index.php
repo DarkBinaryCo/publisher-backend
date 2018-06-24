@@ -6,7 +6,7 @@
  *
  * This content is released under the MIT License (MIT)
  *
- * Copyright (c) 2014 - 2018, British Columbia Institute of Technology
+ * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -29,7 +29,7 @@
  * @package	CodeIgniter
  * @author	EllisLab Dev Team
  * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
- * @copyright	Copyright (c) 2014 - 2018, British Columbia Institute of Technology (http://bcit.ca/)
+ * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
  * @license	http://opensource.org/licenses/MIT	MIT License
  * @link	https://codeigniter.com
  * @since	Version 1.0.0
@@ -53,8 +53,16 @@
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
-	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
-
+	$server = $_SERVER['HTTP_HOST'];
+	switch($server)
+	{
+		case 'localhost':
+			$env = 'development';
+		break;
+		default:
+			$env = 'production';
+	}
+	define('ENVIRONMENT', $env);
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
@@ -63,6 +71,7 @@
  * Different environments will require different levels of error reporting.
  * By default development will show errors but testing and live will hide them.
  */
+$base_ci_dir = '../ci/';
 switch (ENVIRONMENT)
 {
 	case 'development':
@@ -72,7 +81,7 @@ switch (ENVIRONMENT)
 
 	case 'testing':
 	case 'production':
-		ini_set('display_errors', 0);
+		ini_set('display_errors', 1);#TODO: return to 0 during production ~ using this for testing
 		if (version_compare(PHP_VERSION, '5.3', '>='))
 		{
 			error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT & ~E_USER_NOTICE & ~E_USER_DEPRECATED);
@@ -97,7 +106,7 @@ switch (ENVIRONMENT)
  * This variable must contain the name of your "system" directory.
  * Set the path if it is not in the same directory as this file.
  */
-	$system_path = 'system';
+	$system_path = $base_ci_dir.'system';
 
 /*
  *---------------------------------------------------------------
@@ -114,7 +123,7 @@ switch (ENVIRONMENT)
  *
  * NO TRAILING SLASH!
  */
-	$application_folder = 'application';
+	$application_folder = $base_ci_dir.'application';
 
 /*
  *---------------------------------------------------------------
