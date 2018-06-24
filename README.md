@@ -11,14 +11,17 @@ The code is split into two directories `ci` and `public`
 - The `ci` directory contains codeigniter files, this is where any of your backend code will reside. By default, you can upload this in the root of your server. This prevents it from being publicly accessible.
 
 ## Environments
-Production and development environments are setup to work automatically with the assumption being that `localhost` is a development environment and anything else is production.
+Production and development environments are setup to work automatically with the assumption being that `localhost` is a development environment and anything else is production. Different configurations can be setup for **development** and **production** environments.
+
+- **Development** related `config` files will go under `config/development` 
+- **Production** related `config` files will go under `config/production` 
 
 ## Helpers
 The boilerplate comes with a few helpers to help with various common functionality
 - `asset_helper` - This helper contains functions that can be used to retrieve asset urls
 
 ## Libraries
-No extra libraries included as yet
+No extra libraries included as yet. Considering adding Google Captcha
 
 ## Defaults that have been changed
 The default base_url value for production is set to `'http://localhost'` as opposed to being blank
