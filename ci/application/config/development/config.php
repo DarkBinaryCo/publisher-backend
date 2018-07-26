@@ -35,7 +35,7 @@ $config['base_url'] = 'http://localhost/<project_dir_name>/public/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
