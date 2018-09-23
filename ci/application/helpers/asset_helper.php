@@ -6,5 +6,5 @@
 */
 function asset_url($url)
 {
-	return basepath(ASSET_DIR.$url);
+	return base_url(ASSET_DIR.$url);
 }
