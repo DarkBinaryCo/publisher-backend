@@ -2,6 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class MY_Controller extends CI_Controller {
+
 	protected $data;
 	protected $container_template;
 	private $_header_view_name;
@@ -10,6 +11,10 @@ class MY_Controller extends CI_Controller {
 	public function __construct($container_template,$header_view_name=NULL,$footer_view_name=NULL)
 	{
 		parent::__construct();
+
+		// Controller scope
+		$this->data = array();
+		
 		$this->_header_view_name = $header_view_name ?? NULL;
 		$this->_footer_view_name = $footer_view_name ?? NULL;
 		$this->container_template = $container_template;
