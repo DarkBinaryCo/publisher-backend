@@ -88,3 +88,6 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 	CUSTOM CONSTANTS
 */
 define('ASSET_DIR','assets/');
+
+// Site info
+define('SITE_NAME','Site Name');

@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class MY_Controller extends CI_Controller {
-
+	protected $data;
 	protected $container_template;
 	private $_header_view_name;
 	private $_footer_view_name;
