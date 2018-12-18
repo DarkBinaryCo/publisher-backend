@@ -13,6 +13,7 @@ class Site extends MY_Controller {
 	
 	public function index()
 	{
+		echo "In the index page";
 		//TODO: Add implementation
 	}
 
