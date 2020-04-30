@@ -12,7 +12,7 @@
 * Translation: primjeri
 *		info@primjeri.com
 *
-* Location: http://github.com/benedmunds/ion_auth/
+* Location: https://github.com/benedmunds/CodeIgniter-Ion-Auth
 *
 * Created:  03.09.2013
 *
@@ -157,7 +157,4 @@ $lang['email_forgot_password_heading']    = 'Poništi lozinku za %s';
 $lang['email_forgot_password_subheading'] = 'Klikni ovaj link za %s.';
 $lang['email_forgot_password_link']       = 'Poništi lozinku';
 
-// New Password Email
-$lang['email_new_password_heading']    = 'Nova lozinka za %s';
-$lang['email_new_password_subheading'] = 'Vaša lozinka je poništena: %s';
 

@@ -12,7 +12,7 @@
 * Translation: Bruce Huang
 *         	   @libruce
 *
-* Location: http://github.com/benedmunds/ion_auth/
+* Location: https://github.com/benedmunds/CodeIgniter-Ion-Auth
 *
 * Created:  03.09.2013
 *
@@ -161,6 +161,3 @@ $lang['email_forgot_password_heading']    = '重置 %s 的密码';
 $lang['email_forgot_password_subheading'] = '请点击连接跳转至 %s.';
 $lang['email_forgot_password_link']       = '重置您的密码';
 
-// New Password Email
-$lang['email_new_password_heading']    = '%s 的新密码';
-$lang['email_new_password_subheading'] = '您的密码已经重置为: %s';

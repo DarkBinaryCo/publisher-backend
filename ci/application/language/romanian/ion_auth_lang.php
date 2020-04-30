@@ -6,7 +6,7 @@
 * 		  avenir.ro@gmail.com
 *         @benedmunds
 *
-* Location: http://github.com/benedmunds/ion_auth/
+* Location: https://github.com/benedmunds/CodeIgniter-Ion-Auth
 *
 * Created:  10.09.2013
 *
@@ -72,7 +72,3 @@ $lang['email_forgot_password_heading']    	= 'Resetarea parolei pentru %s';
 $lang['email_forgot_password_subheading'] 	= 'Dați clic pe această adresă pentru %s.';
 $lang['email_forgot_password_link']       	= 'Resetarea parolei';
 
-// New Password Email
-$lang['email_new_password_subject']         = 'Parola nouă';
-$lang['email_new_password_heading']    		= 'Parola nouă pentru %s';
-$lang['email_new_password_subheading'] 		= 'Parola a fost resetată: %s';

@@ -8,7 +8,7 @@
 * Translation:  Petrosyan R.
 *             for@petrosyan.rv.ua
 *
-* Location: http://github.com/benedmunds/ion_auth/
+* Location: https://github.com/benedmunds/CodeIgniter-Ion-Auth
 *
 * Created:  03.27.2010
 *
@@ -19,10 +19,7 @@
 // Account Creation
 $lang['account_creation_successful']		= 'Обліковий запис успішно створено';
 $lang['account_creation_unsuccessful']		= 'Неможливо створити обліковий запис';
-$lang['account_creation_duplicate_email']	= 'Електронна пошта використовується або некоректна';
-$lang['account_creation_duplicate_identity']    = 'Ім`я користувача існує або некоректне';
-
-// TODO Please Translate
+$lang['account_creation_duplicate_identity']    = 'Електронна пошта використовується або некоректна';
 $lang['account_creation_missing_default_group'] = 'Група за умовчанням не встановлена';
 $lang['account_creation_invalid_default_group'] = 'Група за умовчанням задана некоректно';
 
@@ -39,7 +36,7 @@ $lang['deactivate_successful']          = 'Обліковий запис деа�
 $lang['deactivate_unsuccessful']        = 'Неможливо деактивувати обліковий запис';
 $lang['activation_email_successful']    = 'Повідомлення про активацію відправлено';
 $lang['activation_email_unsuccessful']  = 'Повідомлення про активацію неможливо відправити';
-$lang['deactivate_current_user_unsuccessful']= 'You cannot De-Activate your self.';
+$lang['deactivate_current_user_unsuccessful']= 'Ви не можете самі деактивувати свій обліковий запис';
 
 // Login / Logout
 $lang['login_successful']		= 'Авторизація пройшла успішно';
@@ -74,7 +71,3 @@ $lang['email_forgotten_password_subject']	= 'Перевірка забутого
 $lang['email_forgot_password_heading']		= 'Скидання пароля для користувача %s';
 $lang['email_forgot_password_subheading']	= 'Натисніть на посилання для %s.';
 $lang['email_forgot_password_link']		= 'Відновлення пароля';
-// New Password Email
-$lang['email_new_password_subject']	= 'Відновлення пароля';
-$lang['email_new_password_heading']	= 'Новий пароль для %s';
-$lang['email_new_password_subheading']  = 'Пароль змінений на: %s';

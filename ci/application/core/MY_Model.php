@@ -3,9 +3,13 @@
 //Model override
 class MY_Model extends CI_Model
 {
-	function __construct()
+    protected $table_name;
+
+	function __construct($table_name='')
 	{
+        $this->table_name = $table_name;
 		$this->load->database();
+		// $this->db->save_queries = FALSE;
 	}
 
 	// Generates a random 64 bit string
@@ -70,26 +74,101 @@ class MY_Model extends CI_Model
 		}
 	}
 
-	/** Generate a random integer id for the table specified 
-	 * @param string $table_name The name of the table we want to check for the id
-	 * @param mixed $id_column Name of the id column we are going to be checking
+	/**  Loops through multiple filters and generates relevant search filters 
+	 * @description Using this to allow for duplicate search query entries, eg. Using one search string to get multiple items
 	*/
-	public function generate_int_id($table_name,$id_column)
+	protected function use_search_filters($search_filters)
 	{
-		$generated_id = rand((int)ID_INT_MIN,(int)ID_INT_MAX);
-		
-		$item_exists = $this->_id_exists($table_name,$id_column,$generated_id);
-
-		// If id exists ~ try genrating again (recursively)
-		if($item_exists)
-		{//! Big O of log(N) ~ Consider finding optimization, possibly use dynamic programming
-			$generated_id = $this->generate_int_id($table_name,$id_column);
-		}
-		else
+		if(empty($search_filters))
 		{
-			return $generated_id;
+			return;
+		}
+		
+		// Only use search filters if they were found
+		for($i=0; $i<count($search_filters); $i++)
+		{
+			$current_filter = $search_filters[$i];
+
+			// This allows for starting the query with a 'AND LIKE' which in turn allows for correct searching 
+			if($i === 0)
+			{
+				$this->db->like($current_filter);
+			}
+			else
+			{
+				$this->db->or_like($current_filter);
+			}
+		}
+		// var_dump($this->db->get_compiled_select());
+	}
+
+	// Uses filter if the limit is not empty
+	protected function use_filters($filters)
+	{
+		if(!empty($filters))
+		{
+			$this->db->where($filters);
 		}
 	}
 
+	// Uses limit if the limit is not empty
+	protected function use_limit($limit,$offset=0)
+	{
+		if(!empty($limit))
+		{
+			$this->db->limit($limit,$offset);
+		}
+    }
+    
+    /* 
+        CRUD
+    */
+    // Determine whether `WHERE` or `LIKE` should be used
+    private function _get_filter_query($filters,$is_strict) # Facade pattern in use
+    {
+        // Use `WHERE` for strict matching
+        if($is_strict)
+        {
+            $this->use_filters($filters);
+        }
+        else // Use `LIKE` for loose matching
+        {
+            $this->use_search_filters($filters);
+        }
+    }
 
+    // Create
+    protected function create($data)
+    {
+        return $this->db->insert($this->table_name,$data);
+    }
+
+    // Insert batch ~ multiple records at once
+    protected function create_batch($data)
+    {
+        return $this->db->insert_batch($this->table_name,$data);
+    }
+
+    // Read
+    protected function read($filters,$limit=NULL,$offset=0,$is_strict=TRUE)
+    {
+        $this->_get_filter_query($fitlers,$is_strict);
+        $this->use_limit($limit,$offset);
+
+        return $this->db->get($this->table_name);
+    }
+
+    // Update ~ optionally use `LIKE`, or `WHERE` ~ defaults to `WHERE`
+    protected function update($filters,$data,$is_strict=TRUE)
+    {
+        $this->_get_filter_query($fitlers,$is_strict);
+        return $this->db->update($this->table_name,$data);
+    }
+
+    // Delete
+    protected function delete($filters,$is_strict=TRUE)
+    {
+        $this->_get_filter_query($fitlers,$is_strict);
+        return $this->db->delete($this->table_name);
+    }
 }

@@ -5,7 +5,7 @@
 * Translator: Donatas Glodenis
 * 		  dgvirtual@akl.lt
 *
-* Location: http://github.com/benedmunds/ion_auth/
+* Location: https://github.com/benedmunds/CodeIgniter-Ion-Auth
 *
 * Created:  10.05.2016
 *
@@ -155,6 +155,4 @@ $lang['email_forgot_password_subheading'] = 'Norėdami %s turite paspausti šią
 $lang['email_forgot_password_link']       = 'Sugeneruoti slaptažodį iš naujo';
 
 // New Slaptažodis Email
-$lang['email_new_password_heading']    = 'Naujas %s slaptažodis';
-$lang['email_new_password_subheading'] = 'Jums buvo sugeneruotas naujas slaptažodis: %s';
 

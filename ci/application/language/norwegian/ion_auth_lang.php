@@ -10,7 +10,7 @@
 * 		  yngve.hoiseth@gmail.com
 *         @yhoiseth
 *
-* Location: http://github.com/benedmunds/ion_auth/
+* Location: https://github.com/benedmunds/CodeIgniter-Ion-Auth
 *
 * Created:  01.01.2012
 * Last-Edit: 16.11.2014
@@ -78,7 +78,3 @@ $lang['email_forgot_password_heading']    = 'Tilbakestill passord for %s';
 $lang['email_forgot_password_subheading'] = 'Klikk på denne linken for å %s.';
 $lang['email_forgot_password_link']       = 'Tilbakestill passord';
 
-// New Password Email
-$lang['email_new_password_subject']    = 'Nytt passord';
-$lang['email_new_password_heading']    = 'Nytt passord for %s';
-$lang['email_new_password_subheading'] = 'Passordet ditt har blitt endret til: %s';

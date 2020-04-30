@@ -1,16 +1,16 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
 * Name:  Ion Auth Lang - Hungarian
-* 
+*
 * Author: Balazs Bosternak
 * 		    b.bosternak@gmail.com
-* 
-* Location: http://github.com/benedmunds/ion_auth/
-*          
-* Created:  07.19.2015 
-* 
+*
+* Location: https://github.com/benedmunds/CodeIgniter-Ion-Auth
+*
+* Created:  07.19.2015
+*
 * Description:  Hungarian language file for Ion Auth messages and errors
-* 
+*
 */
 
 // Account Creation
@@ -71,7 +71,3 @@ $lang['email_forgot_password_heading']    		= 'Új jelszó beállítása %s szá
 $lang['email_forgot_password_subheading'] 		= 'Kattintson a linkre az %s érdekében.';
 $lang['email_forgot_password_link']       		= 'Új jelszó beállítása';
 
-// New Password Email
-$lang['email_new_password_subject']       	= 'Új jelszó';
-$lang['email_new_password_heading']    			= 'új jelszó %s számára';
-$lang['email_new_password_subheading'] 			= 'Jelszava megváltozott a következőre: %s';

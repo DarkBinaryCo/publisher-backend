@@ -9,7 +9,7 @@
 * Author: Daniel Davis
 *         @ourmaninjapan
 *
-* Location: http://github.com/benedmunds/ion_auth/
+* Location: https://github.com/benedmunds/CodeIgniter-Ion-Auth
 *
 * Created:  03.09.2013
 *
@@ -158,7 +158,4 @@ $lang['email_forgot_password_heading']    = 'Wachtwoord resetten voor %s';
 $lang['email_forgot_password_subheading'] = 'Gelieve op deze link te klikken om %s.';
 $lang['email_forgot_password_link']       = 'Reset uw wachtwoord';
 
-// New Password Email
-$lang['email_new_password_heading']    = 'Nieuw wachtwoord voor %s';
-$lang['email_new_password_subheading'] = 'Je wachtwoord werd gereset naar: %s';
 

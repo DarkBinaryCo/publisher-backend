@@ -13,7 +13,7 @@
 * Modification: pBeez
 * 		  @pbeez
 *
-* Location: http://github.com/benedmunds/ion_auth/
+* Location: https://github.com/benedmunds/CodeIgniter-Ion-Auth
 *
 * Created:  10.24.2012
 * Modified: 01.01.2017
@@ -45,7 +45,7 @@ $lang['deactivate_successful'] 		  	     = 'حساب کاربري غيرفعال
 $lang['deactivate_unsuccessful'] 	  	     = 'امكان غيرفعال كردن حساب کاربري وجود ندارد';
 $lang['activation_email_successful'] 	  	 = 'ایمیل فعال سازی فرستاده شد';
 $lang['activation_email_unsuccessful']   	 = 'امكان ارسال ایمیل فعال سازی وجود ندارد';
-$lang['deactivate_current_user_unsuccessful']= 'You cannot De-Activate your self.';
+$lang['deactivate_current_user_unsuccessful']= 'شما قادر به غیر فعالسازی اکانت خود نمی باشید.';
 
 // Login / Logout
 $lang['login_successful'] 		  	         = 'ورود موفقیت آميز';
@@ -80,7 +80,3 @@ $lang['email_forgotten_password_subject']    = 'تایید رمز عبور جد�
 $lang['email_forgot_password_heading']    = 'بازیابی کلمه عبور برای %s';
 $lang['email_forgot_password_subheading'] = 'لطفا روی این لینک کلیک کنید: %s';
 $lang['email_forgot_password_link']       = 'کلمه عبور خود را بازیابی کنید';
-// New Password Email
-$lang['email_new_password_subject']          = 'رمز عبور جدید';
-$lang['email_new_password_heading']    = 'کلمه عبور جدید برای %s';
-$lang['email_new_password_subheading'] = 'کلمه عبور جدید شما:‌ %s';

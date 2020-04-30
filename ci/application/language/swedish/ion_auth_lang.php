@@ -6,7 +6,7 @@
 * 		  ben.edmunds@gmail.com
 *         @benedmunds
 *
-* Location: http://github.com/benedmunds/ion_auth/
+* Location: https://github.com/benedmunds/CodeIgniter-Ion-Auth
 *
 * Created:  03.14.2010
 *
@@ -75,7 +75,3 @@ $lang['email_forgot_password_heading']    = 'Glömt lösenord för %s';
 $lang['email_forgot_password_subheading'] = 'Klicka denna länk för att %s.';
 $lang['email_forgot_password_link']       = 'återställa ditt lösenord';
 
-// New Password Email
-$lang['email_new_password_subject']     = 'Nytt Lösenord';
-$lang['email_new_password_heading']     = 'Nytt lösenord för %s';
-$lang['email_new_password_subheading']  = 'Ditt lösenord har blivit återställts till: %s';

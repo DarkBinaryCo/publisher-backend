@@ -4,10 +4,10 @@
 *
 * Author: Žiga Drnovšček
 * 		  ziga.drnovscek@gmail.com
-*         
 *
 *
-* Location: http://github.com/benedmunds/ion_auth/
+*
+* Location: https://github.com/benedmunds/CodeIgniter-Ion-Auth
 *
 * Created:  12.5.2013
 *
@@ -153,6 +153,4 @@ $lang['email_forgot_password_subheading'] = 'Prosimo, sledite povezavi do %s.';
 $lang['email_forgot_password_link']       = 'Ponastavite geslo';
 
 // Novo geslo sporočilo
-$lang['email_new_password_heading']    = 'Novo geslo za %s';
-$lang['email_new_password_subheading'] = 'Vaše geslo je bilo ponastavljeno v: %s';
 

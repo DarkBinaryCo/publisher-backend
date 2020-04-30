@@ -9,7 +9,7 @@
 * Author/Translation: Daniel Davis
 *         @ourmaninjapan
 *
-* Location: http://github.com/benedmunds/ion_auth/
+* Location: https://github.com/benedmunds/CodeIgniter-Ion-Auth
 *
 * Created:  03.19.2013
 *
@@ -158,7 +158,4 @@ $lang['email_forgot_password_heading']    = 'パスワードのリセット： %
 $lang['email_forgot_password_subheading'] = 'このリンクをクリックして%s。';
 $lang['email_forgot_password_link']       = 'パスワードをリセットして下さい';
 
-// New Password Email
-$lang['email_new_password_heading']    = '新しいパスワード： %s';
-$lang['email_new_password_subheading'] = 'パスワードをリセットすることができました： %s';
 

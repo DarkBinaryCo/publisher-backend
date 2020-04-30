@@ -5,7 +5,7 @@
 * Author: pBeez
 *         @pbeez
 *
-* Location: http://github.com/benedmunds/ion_auth/
+* Location: https://github.com/benedmunds/CodeIgniter-Ion-Auth
 *
 * Created:  01.01.2017
 *
@@ -130,7 +130,7 @@ $lang['forgot_password_validation_email_label']  = 'آدرس ایمیل';
 $lang['forgot_password_username_identity_label'] = 'نام کاربری';
 $lang['forgot_password_email_identity_label']    = 'ایمیل';
 $lang['forgot_password_email_not_found']         = 'اطلاعات یافت نشد';
-$lang['forgot_password_identity_not_found']         = 'No record of that username address.';
+$lang['forgot_password_identity_not_found']         = 'موردی برای این نام کاربری یافت نشد.';
 
 // Reset Password
 $lang['reset_password_heading']                               = 'تغییر کلمه عبور';
@@ -150,6 +150,3 @@ $lang['email_forgot_password_heading']    = 'بازیابی کلمه عبور ب
 $lang['email_forgot_password_subheading'] = 'لطفا روی این لینک کلیک کنید %s';
 $lang['email_forgot_password_link']       = 'کلمه عبور خود را بازیابی کنید';
 
-// New Password Email
-$lang['email_new_password_heading']    = 'کلمه عبور جدید برای %s';
-$lang['email_new_password_subheading'] = 'کلمه عبور جدید شما: %s';

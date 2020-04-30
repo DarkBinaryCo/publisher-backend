@@ -6,7 +6,7 @@
 *           contacto@wilfridogarcia.com
 *           @wilfridogarcia
 *
-* Location: http://github.com/benedmunds/ion_auth/
+* Location: https://github.com/benedmunds/CodeIgniter-Ion-Auth
 *
 * Created:  05.04.2010
 *
@@ -35,7 +35,7 @@ $lang['deactivate_successful']                  = 'Cuenta desactivada con éxito
 $lang['deactivate_unsuccessful']                = 'No se ha podido desactivar la cuenta';
 $lang['activation_email_successful']            = 'Email de activación enviado';
 $lang['activation_email_unsuccessful']          = 'No se ha podido enviar el email de activación';
-$lang['deactivate_current_user_unsuccessful']= 'You cannot De-Activate your self.';
+$lang['deactivate_current_user_unsuccessful']= 'No se puede desactivar usted mismo';
 
 // Login / Logout
 $lang['login_successful']                       = 'Sesión iniciada con éxito';
@@ -72,7 +72,3 @@ $lang['email_forgot_password_heading']          = 'Resetea contraseña para %s';
 $lang['email_forgot_password_subheading']       = 'Por favor, haga click en este link para %s.';
 $lang['email_forgot_password_link']             = 'Resetea tu contraseña';
 
-// New Password Email
-$lang['email_new_password_subject']             = 'Nueva contraseña';
-$lang['email_new_password_heading']             = 'Nueva contraseña para %s';
-$lang['email_new_password_subheading']          = 'Tu contraseña ha sido reseteada a: %s';

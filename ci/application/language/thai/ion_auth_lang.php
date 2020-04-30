@@ -10,7 +10,7 @@
 * 		  id513128@gmail.com
 *         @itpcc
 *
-* Location: http://github.com/benedmunds/ion_auth/
+* Location: https://github.com/benedmunds/CodeIgniter-Ion-Auth
 *
 * Created:  03.14.2010
 * modify :  10.11.2014
@@ -78,7 +78,3 @@ $lang['email_forgot_password_heading']    = 'ล้างรหัสผ่า�
 $lang['email_forgot_password_subheading'] = 'กรุณาคลิกลิงค์นี้เพื่อ%s';
 $lang['email_forgot_password_link']       = 'ล้างรหัสผ่าน';
 
-// New Password Email
-$lang['email_new_password_subject']          = 'รหัสผ่านใหม่';
-$lang['email_new_password_heading']    = 'รหัสผ่านใหม่สำหรับ%s';
-$lang['email_new_password_subheading'] = 'รหัสผ่านใหม่ถูกตั้งใหม่เป็น: %s';

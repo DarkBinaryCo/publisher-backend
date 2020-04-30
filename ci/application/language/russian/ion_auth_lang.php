@@ -8,7 +8,7 @@
 * Translation:  Petrosyan R.
 *             for@petrosyan.rv.ua
 *
-* Location: http://github.com/benedmunds/ion_auth/
+* Location: https://github.com/benedmunds/CodeIgniter-Ion-Auth
 *
 * Created:  03.26.2010
 *
@@ -19,8 +19,7 @@
 // Account Creation
 $lang['account_creation_successful'] 	  	 = 'Учетная запись успешно создана';
 $lang['account_creation_unsuccessful'] 	 	 = 'Невозможно создать учетную запись';
-$lang['account_creation_duplicate_email'] 	 = 'Электронная почта используется или некорректна';
-$lang['account_creation_duplicate_username'] 	 = 'Имя пользователя существует или некорректно';
+$lang['account_creation_duplicate_identity']    = 'Электронная почта используется или некорректна';
 $lang['account_creation_missing_default_group'] = 'Группа по умолчанию не установлена';
 $lang['account_creation_invalid_default_group'] = 'Группа по умолчанию задана некорректно';
 
@@ -70,7 +69,3 @@ $lang['email_forgotten_password_subject']    = 'Проверка забытог�
 $lang['email_forgot_password_heading']    = 'Сброс пароля для пользователя %s';
 $lang['email_forgot_password_subheading'] = 'Нажмите на ссылку для %s.';
 $lang['email_forgot_password_link']       = 'Восстановления пароля';
-// New Password Email
-$lang['email_new_password_subject']          = 'Новый пароль';
-$lang['email_new_password_heading']    = 'Новый пароль для %s';
-$lang['email_new_password_subheading'] = 'Пароль изменён на: %s';

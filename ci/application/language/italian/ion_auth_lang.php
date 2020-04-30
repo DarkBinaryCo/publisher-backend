@@ -6,7 +6,7 @@
 *         ben.edmunds@gmail.com
 *         @benedmunds
 *
-* Location: http://github.com/benedmunds/ion_auth/
+* Location: https://github.com/benedmunds/CodeIgniter-Ion-Auth
 *
 * Created:  07.08.2010
 *
@@ -71,7 +71,3 @@ $lang['email_forgotten_password_subject']    = 'Verifica il cambio password dime
 $lang['email_forgot_password_heading']    = 'Reimposta Password per %s';
 $lang['email_forgot_password_subheading'] = 'Si prega di cliccare su questo collegamento per %s.';
 $lang['email_forgot_password_link']       = 'Reimposta la tua Password';
-// New Password Email
-$lang['email_new_password_subject']          = 'Nuova Password';
-$lang['email_new_password_heading']    = 'Nuova Password per %s';
-$lang['email_new_password_subheading'] = 'La tua Password &egrave; stata reimpostata a: %s';

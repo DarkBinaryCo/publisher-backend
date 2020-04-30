@@ -4,7 +4,7 @@
 *
 * Author:
 *
-* Location: http://github.com/benedmunds/ion_auth/
+* Location: https://github.com/benedmunds/CodeIgniter-Ion-Auth
 *
 * Created:
 *
@@ -62,7 +62,3 @@ $lang['email_forgotten_password_subject']    	= 'Verifikation af glemt adgangsko
 $lang['email_forgot_password_heading']    = 'Reset Password for %s';
 $lang['email_forgot_password_subheading'] = 'Please click this link to %s.';
 $lang['email_forgot_password_link']       = 'Reset Your Password';
-// New Password Email
-$lang['email_new_password_subject']          	= 'Nyt kodeord';
-$lang['email_new_password_heading']    = 'New Password for %s';
-$lang['email_new_password_subheading'] = 'Your password has been reset to: %s';

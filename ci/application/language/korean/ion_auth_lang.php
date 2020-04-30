@@ -6,7 +6,7 @@
 * 		  sople1@snooey.net
 *         @sople1
 *
-* Location: http://github.com/benedmunds/ion_auth/
+* Location: https://github.com/benedmunds/CodeIgniter-Ion-Auth
 *
 * Created:  2013-07-03
 *
@@ -72,7 +72,3 @@ $lang['email_forgotten_password_subject']    = '잊어버린 비밀번호를 찾
 $lang['email_forgot_password_heading']    = 'Reset Password for %s';
 $lang['email_forgot_password_subheading'] = 'Please click this link to %s.';
 $lang['email_forgot_password_link']       = 'Reset Your Password';
-// New Password Email
-$lang['email_new_password_subject']          = '새 비밀번호를 보내드립니다';
-$lang['email_new_password_heading']    = 'New Password for %s';
-$lang['email_new_password_subheading'] = 'Your password has been reset to: %s';

@@ -9,7 +9,7 @@
 * Author: Daniel Davis
 *         @ourmaninjapan
 *
-* Location: http://github.com/benedmunds/ion_auth/
+* Location: https://github.com/benedmunds/CodeIgniter-Ion-Auth
 *
 * Created:  03.09.2013
 *
@@ -158,7 +158,4 @@ $lang['email_forgot_password_heading']    = 'Reimposta la Password per %s';
 $lang['email_forgot_password_subheading'] = 'Cliccare il seguente link per %s.';
 $lang['email_forgot_password_link']       = 'Reimposta la tua Password';
 
-// New Password Email
-$lang['email_new_password_heading']    = 'Nuova Password per %s';
-$lang['email_new_password_subheading'] = 'La tua password &egrave; stata reimpostata a: %s';
 

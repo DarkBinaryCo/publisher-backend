@@ -9,7 +9,7 @@
 * Author: Jakub Vatrt
 *         vatrtj@gmail.com
 *
-* Location: http://github.com/benedmunds/ion_auth/
+* Location: https://github.com/benedmunds/CodeIgniter-Ion-Auth
 *
 * Created:  11.11.2016
 *
@@ -154,7 +154,5 @@ $lang['email_forgot_password_heading'] = 'Vytvoriť nové heslo pre %s';
 $lang['email_forgot_password_subheading'] = 'Prosím kliknite na tento odkaz %s.';
 $lang['email_forgot_password_link'] = 'Reset hesla';
 
-// New Password Email
-$lang['email_new_password_heading'] = 'Nové heslo pre %s';
 $lang['email new_password nadpis'] = 'Vaše heslo bolo obnovené: %s';
 

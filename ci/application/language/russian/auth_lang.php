@@ -12,7 +12,7 @@
  * Translation: Ievgen Sentiabov
  *         @joni-jones
  *
- * Location: http://github.com/benedmunds/ion_auth/
+ * Location: https://github.com/benedmunds/CodeIgniter-Ion-Auth
  *
  * Created:  03.09.2013
  *
@@ -162,6 +162,3 @@ $lang['email_forgot_password_heading']    = 'Сбросить пароль дл�
 $lang['email_forgot_password_subheading'] = 'Пожалуста по ссылке для %s.';
 $lang['email_forgot_password_link']       = 'Сбросить пароль';
 
-// New Password Email
-$lang['email_new_password_heading']    = 'Новый пароль для %s';
-$lang['email_new_password_subheading'] = 'Пароль был сброшен для: %s';
