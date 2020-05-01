@@ -51,9 +51,13 @@ class MY_Controller extends CI_Controller {
 			show_404();
 		}
 
-		$header_content = $this->load->view($header_view_name,$header_view_data,TRUE);
+		// Only set the header if we have provided a header view
+		$header_content = !$header_view_name ? '' : $this->load->view($header_view_name,$header_view_data,TRUE);
+		
+		// Only provide the footer if we have provided a footer view
+		$footer_content = !$footer_view_name ? '' : $this->load->view($footer_view_name,$footer_view_data,TRUE);
+
 		$page_content = $this->load->view($view_path, $data, TRUE);
-		$footer_content = $this->load->view($footer_view_name,$footer_view_data,TRUE);
 
 		//Place the view in the container specified
 		$this->load->view($this->container_template,array(
