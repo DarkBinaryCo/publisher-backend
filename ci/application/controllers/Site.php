@@ -13,8 +13,19 @@ class Site extends MY_Controller {
 	
 	public function index()
 	{
-		echo "In the index page";
-		//TODO: Add implementation
+		$this->_render_page('home',$this->data);
+	}
+
+	// Get book page
+	public function book()
+	{
+		$this->_render_page('book',$this->data);
+	}
+
+	// Thank you page
+	public function thanks()
+	{
+		$this->_render_page('thanks',$this->data);
 	}
 
 }
