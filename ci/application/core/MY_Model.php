@@ -140,7 +140,10 @@ class MY_Model extends CI_Model
     // Create
     public function create($data)
     {
-        return $this->db->insert($this->table_name,$data);
+		$this->db->insert($this->table_name,$data);
+		$insert_id = $this->db->insert_id();
+
+		return $insert_id;
     }
 
     // Insert batch ~ multiple records at once
