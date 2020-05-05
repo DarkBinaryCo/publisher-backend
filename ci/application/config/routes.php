@@ -53,4 +53,5 @@ $route['default_controller'] = 'site';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+$route['api/(.+)'] = 'api/$1';
 $route['(.+)'] = 'site/$1';
