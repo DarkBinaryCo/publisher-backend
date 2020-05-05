@@ -118,8 +118,15 @@ class Api_Controller extends CI_Controller
 {
     function __construct()
     {
-        $this->load->library('api');
+		parent::__construct();
+        $this->load->library('api_lib');
         // Set content type to JSON
-    }
+	}
+	
+	// Get request body
+	protected function get_request_body()
+	{
+		return json_decode(file_get_contents('php://input'),true);
+	}
 }
 
