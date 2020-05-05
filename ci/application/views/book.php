@@ -19,14 +19,13 @@
 							<h1 class="text-center cta-text">It's time to&nbsp;<span
 									class="text-black">upgrade</span>&nbsp;your game</h1>
 						</div>
-						<p class="text-center mb-4 cta-description">The ultimate guide to get her to do what you
-							want<br></p>
+						<p class="text-center mb-4 cta-description">The ultimate guide to get her to do what you want<br></p>
 						<div class="form-group"><input type="email" placeholder="Email address"><small
 								class="text-white o-75">We will send the book to this email</small></div>
 						<div class="form-group"><input type="tel" placeholder="Mpesa number"><small
 								class="text-white o-75">Mpesa number you'd like to use to purchase the book</small>
 						</div>
-						<div><button class="btn btn-dark btn-cta" type="button">Get the book - Ksh 599</button></div>
+						<div><button class="btn btn-dark btn-cta" type="button">Get the book - Ksh <strike class="text-warning">799</strike> 599\=</button></div>
 					</div>
 				</div>
 			</div>
