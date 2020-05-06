@@ -33,3 +33,6 @@ ci/application/config/production/database.php
 ci/application/config/production/config.php
 ci/application/config/mpesa.php
 .vscode/launch.json
+node_modules
+public/assets/js/*
+public/assets/img/*

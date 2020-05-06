@@ -1,0 +1,200 @@
+.footer-socials li a:hover,
+.home-link:hover {
+	text-decoration: none
+}
+
+.top-nav,
+footer {
+	position: absolute
+}
+
+.home-link>i {
+	font-size: 1.25rem;
+	color: rgba(255, 255, 255, .54);
+	display: inline-block;
+	border-radius: 100%;
+	padding: .5rem;
+	border: 1px solid rgba(255, 255, 255, .54)
+}
+
+.home-link>i:hover {
+	color: rgba(255, 255, 255, .84);
+	border: 1px solid rgba(255, 255, 255, .84);
+	background-color: rgba(0, 0, 0, .3);
+	cursor: pointer;
+	transition-duration: .25s
+}
+
+.cta-text {
+	font-weight: 500;
+	font-family: Oswald, Roboto, sans-serif;
+	font-size: 48px;
+	color: #fff
+}
+
+@media (min-width:300px) {
+	.cta-text {
+		font-size: 36px
+	}
+}
+
+@media (min-width:576px) {
+	.cta-text {
+		font-size: 40px
+	}
+}
+
+@media (min-width:1200px) {
+	.cta-text {
+		font-size: 32px
+	}
+}
+
+.text-bold {
+	font-weight: 700 !important
+}
+
+.cta-description {
+	font-size: 20px;
+	font-weight: 300;
+	color: #fff
+}
+
+.text-black {
+	color: #1A1A1A !important
+}
+
+input {
+	background: 0 0;
+	border: 1px solid rgba(234, 231, 231, .5);
+	padding: .5rem 1rem;
+	width: 100%;
+	border-radius: 4px;
+	height: 3rem;
+	color: #fff
+}
+
+.btn-cta {
+	width: 100%;
+	padding: 1.75rem 1rem;
+	font-weight: 300
+}
+
+.bg-img {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat
+}
+
+.btn-sm {
+	font-size: 13px;
+	font-weight: 700;
+	min-width: 8rem;
+	padding: .5rem 1rem
+}
+
+.btn-dark {
+	background-color: #1A1A1A
+}
+
+::placeholder {
+	color: rgba(255, 255, 255, .55)
+}
+
+.top-nav {
+	width: 100%;
+	z-index: 999;
+	top: 0
+}
+
+body {
+	overflow-x: hidden
+}
+
+.btn-dark:hover {
+	background-color: #1a1a1a;
+	cursor: pointer;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, .24)
+}
+
+.icon-social-footer {
+	color: #fff;
+	font-size: 1.5rem;
+	opacity: .7
+}
+
+.icon-social-footer:hover {
+	opacity: .9
+}
+
+.footer-socials li {
+	display: inline;
+	padding: 0 1rem
+}
+
+footer {
+	bottom: 0;
+	left: 0;
+	right: 0
+}
+
+.o-75 {
+	opacity: .75
+}
+
+.cover-img {
+	border-radius: 1.2rem;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, .2);
+	max-height: 640px
+}
+
+@media (min-width:992px) {
+	.cover-img {
+		max-height: 500px
+	}
+}
+
+input:focus {
+	outline: 0;
+	border-color: #fff;
+	box-shadow: 1px 1px 2px rgba(255, 255, 255, .25);
+	transition: .3s
+}
+
+#book-bg {
+	background-image: url(../img/book-bg.jpg);
+	background-position: center
+}
+
+#home-bg {
+	background-image: url(../img/home-bg.jpg)
+}
+
+.cta-title {
+	font-size: 4rem
+}
+
+#thank-bg {
+	background-image: url(../img/thank-bg.jpg);
+	background-position: center
+}
+
+#mailing-thank-bg {
+	background-image: url(../img/mailing-thank-bg.jpg);
+	background-position: center
+}
+
+.testimonial-box {
+	padding: 1rem;
+	border: 1px solid rgba(255, 255, 255, .5);
+	border-radius: 1rem;
+	color: rgba(235, 149, 149, .8)
+}
+
+.nav-link {
+	font-size: 13px !important
+}
+
+.cta-container {
+	max-width: 32rem
+}

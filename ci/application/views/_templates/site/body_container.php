@@ -15,9 +15,11 @@
 	<meta name="twitter:image" content="<?= asset_url('img/cover.jpg'); ?>">
 	<meta name="twitter:title" content="How to flirt - Get any woman you want">
 	<link rel="icon" type="image/png" sizes="512x512" href="<?= asset_url('img/school.png'); ?>">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
 	<link rel="stylesheet"
 		href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+	
+	<!-- Bootstrap bundled together with custom styles -->
 	<link rel="stylesheet" href="<?= asset_url('css/styles.min.css'); ?>">
 	<title><?= @$page_title; ?></title>
 
