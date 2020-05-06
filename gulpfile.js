@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+const babel = require('gulp-babel'); // ES6 support
 const concat = require('gulp-concat');
 const imageMin = require('gulp-imagemin');
 const purgeCSS = require('gulp-purgecss');
@@ -28,9 +29,10 @@ const optimizeCSS = () => {
 		.pipe(gulp.dest('public/assets/css'));
 };
 
-// Optimize our own JS
+// Optimize our own JS ~ Also add ES6+ support 
 const optimizeCustomJS = ()=>{
 	return gulp.src(['_dev/**/*.js'])
+	.pipe(babel({presets: ['@babel/preset-env']}))
 	.pipe(uglifyJS())
 	.pipe(gulp.dest('public/assets/js'));
 };
