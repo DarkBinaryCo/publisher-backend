@@ -24,7 +24,7 @@
 								<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
 										name="b_438348e8b396ff440df785850_da570269ad" tabindex="-1" value=""></div>
 								<div class="mt-4"><button type="submit" name="subscribe" id="mc-embedded-subscribe"
-										class="button btn btn-dark btn-cta">GET THE BOOK</button></div>
+										class="button btn btn-dark btn-cta">GET FREE TIPS</button></div>
 							</div>
 						</form>
 					</div>

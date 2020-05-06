@@ -1,9 +1,7 @@
 <div id="book-bg" class="bg-img vh-100">
-	<div class="row pt-2 ml-2 top-nav">
-		<div class="col"><a class="text-dark home-link" href="index.html"><i class="icon-home"></i></a></div>
-	</div>
 	<div class="d-flex justify-content-center align-items-center"
-		style="height: inherit;min-height: initial;width: 100%;position: absolute;left: 0;background-color: rgba(218,58,58,0.8);">
+	style="height: inherit;min-height: initial;width: 100%;position: absolute;left: 0;background-color: rgba(218,58,58,0.8);">
+		<?php $this->load->view('_templates/partials/top_nav',['show_button'=>FALSE]); ?>
 		<div class="d-flex align-items-center order-12" style="height:200px;">
 			<div class="container">
 				<div class="row">
@@ -25,7 +23,7 @@
 						<div class="form-group"><input type="tel" placeholder="Mpesa number"><small
 								class="text-white o-75">Mpesa number you'd like to use to purchase the book</small>
 						</div>
-						<div><button class="btn btn-dark btn-cta" type="button">Get the book - Ksh <strike class="text-warning">799</strike> 599\=</button></div>
+						<div><button class="btn btn-dark btn-cta" type="button">GET THE BOOK - <small class="text-muted">KSH.</small> <strike class="text-warning">799</strike> 599\=</button></div>
 					</div>
 				</div>
 			</div>
