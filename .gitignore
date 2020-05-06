@@ -32,3 +32,4 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 ci/application/config/production/database.php
 ci/application/config/production/config.php
 ci/application/config/mpesa.php
+.vscode/launch.json

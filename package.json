@@ -1,0 +1,19 @@
+{
+  "name": "how-to-flirt",
+  "version": "1.0.0",
+  "description": "Boilerplate code for any codeigniter project. Includes ionauth with bootstrap ## Prerequisites These are the prerequisites for using this boilerplate code:  - CodeIgniter 3.x - PHP >=5.4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarkBinaryCo/publisher-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DarkBinaryCo/publisher-backend/issues"
+  },
+  "homepage": "https://github.com/DarkBinaryCo/publisher-backend#readme"
+}
