@@ -1,4 +1,4 @@
-<div id="thank-bg" class="bg-img vh-100">
+<div id="mailing-thank-bg" class="bg-img vh-100">
     <div class="d-flex justify-content-center align-items-center bg-overlay">
         <div class="d-flex align-items-center order-12">
             <div class="container">
