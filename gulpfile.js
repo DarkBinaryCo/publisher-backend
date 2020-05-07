@@ -31,7 +31,7 @@ const optimizeCSS = () => {
 
 // Optimize our own JS ~ Also add ES6+ support 
 const optimizeCustomJS = ()=>{
-	return gulp.src(['_dev/**/*.js'])
+	return gulp.src(['_dev/js/*.js'])
 	.pipe(babel({presets: ['@babel/preset-env']}))
 	.pipe(uglifyJS())
 	.pipe(gulp.dest('public/assets/js'));
