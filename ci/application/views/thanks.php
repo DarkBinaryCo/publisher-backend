@@ -1,5 +1,4 @@
 <div id="thank-bg" class="bg-img vh-100">
-    <?php $this->load->view('_templates/partials/top_nav'); ?>
     <div class="d-flex justify-content-center align-items-center bg-overlay">
         <div class="d-flex align-items-center order-12">
             <div class="container">
@@ -11,5 +10,4 @@
             </div>
         </div>
     </div>
-    <?php $this->load->view('_templates/partials/footer'); ?>
 </div>
