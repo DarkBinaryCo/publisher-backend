@@ -1,8 +1,7 @@
 <div id="home-bg" class="bg-img vh-100">
-	<div class="d-flex justify-content-center align-items-center"
-		style="height: inherit;min-height: initial;width: 100%;position: absolute;left: 0;background-color: rgba(218,58,58,0.76);">
-		<?php $this->load->view('_templates/partials/top_nav'); ?>
-		<div class="d-flex align-items-center order-12" style="height:200px;">
+    <?php $this->load->view('_templates/partials/top_nav'); ?>
+	<div class="d-flex justify-content-center align-items-center bg-overlay">
+		<div class="d-flex align-items-center order-12">
 			<div class="container">
 				<div class="cta-container">
 					<h1 class="text-center cta-text">Get any woman <span class="text-black">you want</span></h1>
@@ -34,11 +33,5 @@
 			</div>
 		</div>
 	</div>
-	<footer>
-		<ul class="list-unstyled footer-socials pt-2 text-center">
-			<li><a href="#"><i class="icon-social-instagram icon-social-footer"></i></a></li>
-			<li><a href="#"><i class="icon-social-twitter icon-social-footer"></i></a></li>
-			<li><a href="#"><i class="icon-social-facebook icon-social-footer"></i></a></li>
-		</ul>
-	</footer>
+    <?php $this->load->view('_templates/partials/footer'); ?>
 </div>

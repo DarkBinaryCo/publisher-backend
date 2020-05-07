@@ -198,3 +198,17 @@ input:focus {
 .cta-container {
 	max-width: 32rem
 }
+
+.bg-overlay {
+	height: inherit;
+	min-height: inherit;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	background-color: rgba(218, 58, 58, 0.8);
+}
+
+/* Min height */
+.mvh-100 {
+	min-height: 100vh !important;
+}
