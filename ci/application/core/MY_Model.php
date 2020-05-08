@@ -61,12 +61,12 @@ class MY_Model extends CI_Model
 	}
 
 	/** Generate a random string id for the table specified 
-	 * @param string $table_name The name of the table we want to check for the id
 	 * @param mixed $id_column Name of the id column we are going to be checking
+	 * @param string $table_name The name of the table we want to check for the id
 	*/
-	public function generate_string_id($id_column='id')
+	public function generate_string_id($id_column='id',$string_length=32)
     {		
-		$generated_id = $this->_generate_random_string();
+		$generated_id = $this->_generate_random_string('','',$string_length);
 		
 		$item_exists = $this->_id_exists($this->table_name,$id_column,$generated_id);
 
@@ -85,9 +85,9 @@ class MY_Model extends CI_Model
 	 * @param string $table_name The name of the table we want to check for the id
 	 * @param mixed $id_column Name of the id column we are going to be checking
 	*/
-	public function generate_int_id($id_column='id')
+	public function generate_int_id($id_column='id',$min_id_val = 100000, $max_id_val = 999999999)
     {		
-		$generated_id = $this->_generate_random_integer();
+		$generated_id = $this->_generate_random_integer($min_id_val,$max_id_val);
 		
 		$item_exists = $this->_id_exists($this->table_name,$id_column,$generated_id);
 
